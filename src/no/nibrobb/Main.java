@@ -1,4 +1,4 @@
-package com.company;
+package no.nibrobb;
 
 import java.util.StringJoiner;
 import java.util.concurrent.ThreadLocalRandom;
