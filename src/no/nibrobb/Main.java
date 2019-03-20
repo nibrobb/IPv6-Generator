@@ -40,19 +40,3 @@ public class Main {
         }
     }
 }
-
-
-//--------------------NOTES--------------------//
- /*
-        for (int i = 0; i < mordi.length; i++) {
-            IPv6Address += mordi[i];
-        }*/
-
-//print 10 new blank lines
-//IntStream.range(0, 10).forEach(i -> System.out.println());
-
-
-
-// System.out.printf("");
-// Print 1234:1234:1423::::9001:dead
-//"{}:{}:{}:{}:{}:{}:{}:{}"
