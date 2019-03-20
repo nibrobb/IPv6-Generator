@@ -6,15 +6,15 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Main {
 
     // scope: 0-9 a-f
-    static char scope[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    private static char scope[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     public static void main(String[] args) {
-        System.out.println("This program will generate random IPv6-addresses");
+        System.out.println("This program will generate random IPv6-addresses\n");
 
-        printIPv6Address(4);
+        printIPv6Address(10);
     }
 
-    public static String[] generateIPv6Address(){
+    private static String[] generateIPv6Address(){
         String randAddress[] = {"", "", "", "", "", "", "", ""};
 
         for (int i = 0; i < randAddress.length; i++) {
@@ -29,7 +29,7 @@ public class Main {
      * This method prints IPv6-addresses
      * @param nOfAddresses The amount of lines of IPv6-addresses to print
      */
-    public static void printIPv6Address(int nOfAddresses){
+    private static void printIPv6Address(int nOfAddresses){
         StringJoiner joiner;
         for(int j = 0; j < nOfAddresses; j++) {
             joiner = new StringJoiner(":");
